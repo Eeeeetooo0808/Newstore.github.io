@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الرئيسية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <header>
+        <img src="VRX.png" alt="لوجو المتجر" id="logo">
+        <h1>نيو ستور </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">الصفحة الرئيسية</a></li>
+                <li><a href="login.html">تسجيل الدخول</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <h2>أهلاً وسهلاً في متجرنا!</h2>
+        <p>اكتشف مجموعة متنوعة من المنتجات بأسعار رائعة!</p>
+    </section>
+
+    
+
+      <h1>قائمة المنتجات</h1>
+              <div id="products-container" class="products-container"></div>
+        
+            <!-- النموذج مخفي في البداي <!-- النافذة المنبثقة الخاصة بالطلب -->
+             <div id="orderPopup" class="order-popup" style="display: none;">
+               <div class="popup-content">
+                 <span class="close-btn" onclick="closePopup()">×</span>
+                 <h2>طلب المنتج</h2>
+                 <p id="selectedProductName"></p>
+                 <form id="orderForm">
+                   <label for="userID">الآيدي الخاص بك:</label>
+                   <input type="text" id="userID" name="userID" required>
+            
+                   <label for="username">اسم المستخدم:</label>
+                   <input type="text" id="username" name="username" required>
+            
+                   <button type="button" onclick="sendOrder()">إرسال الطلب</button>
+                 </form>
+               </div>
+             </div>
+        
+            <script src="script.js"></script>
+    </section>
+
+    <footer>
+        <p1>&copy; 2024 اسم المتجر. جميع الحقوق محفوظة.</p1>
+      <a href="https://facebook.com">
+      <img src="facebook.png" alt="وصف الصورة" width="50">
+    </a>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

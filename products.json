@@ -1,0 +1,20 @@
+[
+  {
+    "name": "منتج 1",
+    "description": "هذا وصف المنتج الأول.",
+    "price": "$50",
+    "image": "images/product1.jpg"
+    },
+  {
+    "name": "منتج 2",
+    "description": "هذا وصف المنتج الثاني.",
+    "price": "$75",
+    "image": "images/product2.jpg"
+    },
+  {
+    "name": "منتج 3",
+    "description": "هذا وصف المنتج الثالث.",
+    "price": "$100",
+    "image": "images/product3.jpg"
+    }
+]

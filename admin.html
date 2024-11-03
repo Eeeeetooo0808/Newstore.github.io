@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم - إضافة منتج</title>
+    <link rel="stylesheet" href="admin-style.css">
+</head>
+<body>
+    <h2>لوحة التحكم - إضافة منتج جديد</h2>
+
+    <form id="productForm" enctype="multipart/form-data">
+        <label for="productName">اسم المنتج:</label>
+        <input type="text" id="productName" name="productName" required>
+
+        <label for="productDescription">وصف المنتج:</label>
+        <textarea id="productDescription" name="productDescription" required></textarea>
+
+        <label for="productPrice">السعر:</label>
+        <input type="number" id="productPrice" name="productPrice" required>
+
+        <label for="productImage">صورة المنتج:</label>
+        <input type="file" id="productImage" name="productImage" accept="image/*" required>
+
+        <button type="button" onclick="addProduct()">إضافة المنتج</button>
+    </form>
+
+    <script src="admin-script.js"></script>
+</body>
+</html>
